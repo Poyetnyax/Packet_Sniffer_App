@@ -21,10 +21,16 @@ release/
 .Trashes
 
 # Environment variables
+venv/
 .env
 .env.local
 .env.development
 .env.production
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
 
 # IDE and Editor
 .idea/
