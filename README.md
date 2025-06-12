@@ -62,12 +62,7 @@ npm install pcap-parser child-process-promise fs-extra --save
 
 ## Running the Application
 
-1. Start the Python sniffer:
-```bash
-sudo python sniffer.py
-```
-
-2. Start the GUI application:
+1. Start the GUI application:
 ```bash
 cd sniffer_gui
 sudo npm start
