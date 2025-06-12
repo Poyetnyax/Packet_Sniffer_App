@@ -11,6 +11,7 @@ A GUI-based network packet sniffer application built with Electron that allows y
 - User-friendly interface
 - Support for macOS
 
+
 ## Prerequisites
 
 Before running the application, make sure you have the following installed:
@@ -51,6 +52,13 @@ pip install -r requirements.txt
 cd sniffer_gui
 npm install
 ```
+
+Install electrons:
+```bash
+cd packet-sniffer-gui
+npm init -y
+npm install electron --save-dev
+npm install pcap-parser child-process-promise fs-extra --save
 
 ## Running the Application
 
