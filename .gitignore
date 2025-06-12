@@ -1,0 +1,80 @@
+# Node.js and npm
+node_modules/
+npm-debug.log
+yarn-error.log
+.pnpm-debug.log
+
+# Electron
+dist/
+out/
+release/
+*.exe
+*.dmg
+*.AppImage
+*.deb
+*.snap
+
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+
+# IDE and Editor
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Debug logs
+*.log
+logs/
+
+# System Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Build artifacts
+build/
+*.pcap
+*.pcapng
+capture_*.pcap
+
+# Electron Builder
+app-update.yml
+*.blockmap
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Optional Windows
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Optional coverage directory
+coverage/
+
+# Optional config files
+config.local.json

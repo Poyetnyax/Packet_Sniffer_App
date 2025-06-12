@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Packet Sniffer App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <h1>Welcome to Packet Sniffer App</h1>
+    
+    <div class="interface-selector">
+      <h2>Filter interfaces</h2>
+      <p>Select an interface to capture packets from</p>
+      <div id="interface-list" class="interface-list"></div>
+    </div>
+    
+    <div class="controls">
+      <button id="start-btn" class="btn start">Start Capture</button>
+      <button id="stop-btn" class="btn stop" disabled>Stop Capture</button>
+      <button id="save-btn" class="btn save" disabled>Save Capture</button>
+      <select id="save-format" class="save-format">
+        <option value="json">JSON</option>
+        <option value="pcap">PCAP</option>
+      </select>
+    </div>
+    <div id="error-message" class="error-message" style="display: none; color: red;"></div>
+    <div class="packet-table-container">
+      <h2>Captured Packets</h2>
+      <div class="filter-controls">
+        <input type="text" id="filter-input" placeholder="Filter packets...">
+      </div>
+      <table id="packet-table">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Protocol</th>
+            <th>Length</th>
+            <th>Info</th>
+          </tr>
+        </thead>
+        <tbody id="packet-table-body"></tbody>
+      </table>
+    </div>
+  </div>
+  
+  <script src="renderer.js"></script>
+</body>
+</html>
